@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  background-color: #1B84AB;
+  font-family: 'Poppins', 'sans-serif';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2vh;
+}
+
+body .container {
+  color: white;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 55vh;
+  height: 90vh;
+  overflow: hidden;
+  border-radius: 3vh;
+  background-color: #55D9D1;
+  overflow: hidden;
+}
+
+body .container nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 15%;
+  width: 100%;
+}
+
+body .container nav button {
+  padding: 0;
+  font-family: 'Poppins', 'sans-serif';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2vh;
+  text-decoration: none;
+  color: white;
+  width: calc(100%/3);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background-color: #2CB6DC;
+  border: none;
+  cursor: pointer;
+  font-size: 2.5vh;
+}
+
+body .container nav button:hover {
+  -webkit-filter: brightness(85%);
+          filter: brightness(85%);
+}
+
+body .container nav button img {
+  width: 30%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+
+body .container nav button p {
+  margin: 0 auto;
+}
+
+body .container nav button:nth-child(2) img {
+  margin-top: .2em;
+}
+
+body .container nav button:nth-child(1) img {
+  width: 38%;
+}
+
+body .container .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 0%;
+  margin-bottom: 15%;
+}
+
+body .container .buttons button {
+  cursor: pointer;
+  padding: 0;
+  width: 12vh;
+  height: 12vh;
+  border-radius: 50%;
+  border: none;
+  background-color: #B0F7E4;
+}
+
+body .container .buttons button:hover {
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+}
+
+body .container .buttons button img {
+  height: 30%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+body .container h1 {
+  margin: 0;
+  margin-top: 15%;
+  font-size: 5vh;
+}
+
+body .container .time {
+  font-family: 'Courier Prime', monospace;
+  font-size: 6vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .container .alarm {
+  height: 85%;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .alarm .text {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3%;
+}
+
+body .container .alarm .text h3 {
+  font-size: 4vh;
+  text-align: center;
+}
+
+body .container .alarm .setTime {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .container .alarm .setTime .first, body .container .alarm .setTime .second {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5%;
+}
+
+body .container .alarm .setTime .first h3, body .container .alarm .setTime .second h3 {
+  text-align: center;
+  font-size: 3vh;
+}
+
+body .container .alarm .setTime .first input, body .container .alarm .setTime .second input {
+  width: 10vh;
+  border: none;
+  background: #B0F7E4;
+  font-size: 4vh;
+  text-align: center;
+  outline: none;
+  border-radius: 1.3vh;
+}
+
+body .container .timer {
+  height: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .timer .time {
+  display: none;
+}
+
+body .container .timer .timerSet {
+  width: 100%;
+}
+
+body .container .timer .setTime {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5%;
+}
+
+body .container .timer .setTime h3 {
+  text-align: center;
+  font-size: 3vh;
+}
+
+body .container .timer .setTime input {
+  width: 10vh;
+  border: none;
+  background: #B0F7E4;
+  font-size: 6vh;
+  text-align: center;
+  outline: none;
+  border-radius: 1.7vh;
+}
+
+body .container .stopwatch {
+  display: none;
+  height: 85%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=main.css.map */

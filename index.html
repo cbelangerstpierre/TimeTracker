@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Time Tracker</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <button id="alarmButton">
+                    <img src="./images/alarm.png" alt="alarm-image">
+                    <p>Alarm</p>
+                </button>
+                <button id="timerButton">
+                    <img src="./images/timer.png" alt="timer-image">
+                    <p>Timer</p>
+                </button>
+                <button id="stopwatchButton">
+                    <img src="./images/stopwatch.png" alt="stopwatch-image">
+                    <p>StopWatch</p>
+                </button>
+            </nav>
+            <div id="alarm" class="alarm">
+                <h1>Alarm</h1>
+                <div class="text" id="textA">
+                    <h3>Alarm will triger the</h3>
+                    <h3 id="dateA">12 March 2022 at 10:30.</h3>
+                </div>
+                <div class="setTime" id="setTimeA">
+                    <div class="first">
+                        <div class="years">
+                            <input name="Years" id="yearsInputA" value="2022">
+                            <h3>Year</h3>
+                        </div>
+                        <div class="months">
+                            <input name="Months" id="monthsInputA" max=12 min=0 value="00">
+                            <h3>Month</h3>
+                        </div>
+                        <div class="days">
+                            <input name="Days" id="daysInputA" max=31 min=0 value="00">
+                            <h3>Day</h3>
+                        </div>
+                    </div>
+                    <div class="second">
+                        <div class="hours">
+                            <input name="Hours" id="hoursInputA" max=23 min=0 value="00">
+                            <h3>Hour</h3>
+                        </div>
+                        <div class="minutes">
+                            <input name="Minutes" id="minutesInputA" max=59 min=0 value="00">
+                            <h3>Minute</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button id="setResetButtonA">
+                        <img id="setResetImgA" src="./images/correct.png" alt="setResetImg">
+                    </button>
+                </div>
+            </div>
+            <div class="timer" id="timer">
+                <h1>Timer</h1>
+                <div class="setTime" id="setTime">
+                    <div class="hours">
+                        <input name="Hours" id="hoursInputT" max=99 min=0 value="00">
+                        <h3>Hrs</h3>
+                    </div>
+                    <div class="minutes">
+                        <input name="Minutes" id="minutesInputT" max=59 min=0 value="02">
+                        <h3>Mins</h3>
+                    </div>
+                    <div class="seconds">
+                        <input name="Seconds" id="secondsInputT" max=59 min=0 value="00">
+                        <h3>Secs</h3>
+                    </div>
+                </div>
+                <div class="time" id="timeT">
+                    <p id="hoursT">00:</p>
+                    <p id="minutesT">00:</p>
+                    <p id="secondsT">00</p>
+                </div>
+                <div class="timerSet">
+                    <div class="buttons">
+                        <button id="resetT">
+                            <img src="images/reset.png" alt="reset-image">
+                        </button>
+                        <button id="playT">
+                            <img id="playPauseImgT" src="images/play.png" alt="play/pause-image">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="stopwatch" class="stopwatch">
+                <h1>Stopwatch</h1>
+                <div class="time">
+                    <p id="hoursS">00:</p>
+                    <p id="minutesS">00:</p>
+                    <p id="secondsS">00.</p>
+                    <p id="millisecondsS">000</p>
+                </div>
+                <div class="buttons">
+                    <button id="resetS">
+                        <img src="images/reset.png" alt="reset-image">
+                    </button>
+                    <button id="playS">
+                        <img id="playPauseImgS" src="images/play.png" alt="play/pause-image">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/index.js" type="module"></script>
+</html>
